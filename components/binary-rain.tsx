@@ -29,7 +29,8 @@ export function BinaryRain() {
     const isCompact = () => window.innerWidth < 640;
     const streamCount = () => {
       const lowPower = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
-      if (isCompact()) return 9;`r`n      return lowPower ? 14 : 18;
+      if (isCompact()) return 9;
+      return lowPower ? 14 : 18;
     };
 
     const resize = () => {
@@ -120,6 +121,7 @@ export function BinaryRain() {
 
   return <canvas ref={canvasRef} className="binary-rain" aria-hidden="true" />;
 }
+
 
 
 
