@@ -1,0 +1,77 @@
+[    6739ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630
+[    7889ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3016/favicon.ico:0
+[   51184ms] [WARNING] Canvas2D: Multiple readback operations using getImageData are faster with the willReadFrequently attribute set to true. See: https://html.spec.whatwg.org/multipage/canvas.html#concept-canvas-will-read-frequently @ :0
+[  286949ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[  458199ms] [LOG] [Fast Refresh] done in 171284ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[  459819ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[  468228ms] [ERROR] ./app/layout.tsx
+Error:   x Unexpected token `r`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\app\layout.tsx:8:1]
+  5 | 
+  6 | export const metadata: Metadata = {
+  7 |   title: { default: "SDC | Student Developers Club", template: "%s | SDC" },
+  8 |   description: "Student Developers Club at Vardhaman College of Engineering, Hyderabad.",`r`n  icons: { icon: "/icon.svg", shortcut: "/icon.svg", apple: "/icon.svg" },
+    :                                                                                          ^^^
+  9 | };
+ 10 | 
+ 11 | export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/next-devtools/userspace/app/errors/intercept-console-error.js:56
+[  468398ms] [LOG] {file: Object} @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/next-devtools/index.js:1630
+[  468950ms] [LOG] [Fast Refresh] done in 9130ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[  470310ms] [LOG] [Fast Refresh] done in 10492ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[  470736ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[  474774ms] [LOG] [Fast Refresh] done in 4037ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[  483721ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[  550855ms] [LOG] [Fast Refresh] done in 67133ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[  577923ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3016/?_rsc=_mjR7ylJSLpkZcZ3:0
+[  580455ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3016/?_rsc=_mjR7ylJSLpkZcZ3:0
+[  581140ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3016/?_rsc=_mjR7ylJSLpkZcZ3:0
+[  581681ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3016/?_rsc=_mjR7ylJSLpkZcZ3:0
+[  633720ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3016/:0
+[  642861ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(pages-dir-browser)/./node_modules/react-dom/cjs/react-dom-client.development.js:28004
+[  644329ms] SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at loadManifest (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\load-manifest.external.js:43:25)
+    at getMaybePagePath (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\require.js:53:66)
+    at getPagePath (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\require.js:86:22)
+    at requirePage (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\require.js:93:22)
+    at loadComponentsImpl (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\load-components.js:86:38)
+    at DevServer.findPageComponentsImpl (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\next-server.js:900:77)
+    at <unknown> (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\next-server.js:878:21)
+    at <unknown> (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\lib\trace\tracer.js:184:36)
+    at NoopContextManager.with (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NoopTracer.startActiveSpan (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18093)
+    at ProxyTracer.startActiveSpan (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:18854)
+    at <unknown> (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\lib\trace\tracer.js:153:103)
+    at NoopContextManager.with (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:7062)
+    at ContextAPI.with (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\@opentelemetry\api\index.js:1:518)
+    at NextTracerImpl.trace (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\lib\trace\tracer.js:153:28)
+    at DevServer.findPageComponents (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\next-server.js:873:41)
+    at DevServer.findPageComponents (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\dev\next-dev-server.js:706:28)
+    at async DevServer.renderErrorToResponseImpl (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\base-server.js:1695:26)
+    at async pipe.req.req (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\base-server.js:1618:30)
+    at async DevServer.pipeImpl (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\base-server.js:1026:25)
+    at async NextNodeServer.handleCatchallRenderRequest (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\next-server.js:409:21)
+    at async DevServer.handleRequestImpl (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\base-server.js:917:17)
+    at async (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\dev\next-dev-server.js:400:20)
+    at async Span.traceAsyncFn (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\trace\trace.js:157:20)
+    at async DevServer.handleRequest (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\dev\next-dev-server.js:396:24)
+    at async invokeRender (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\lib\router-server.js:240:21)
+    at async handleRequest (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\lib\router-server.js:437:24)
+    at async requestHandlerImpl (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\lib\router-server.js:485:13)
+    at async Server.requestListener (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\lib\start-server.js:226:13)
+[  644255ms] [LOG] [HMR] connected @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:45
+[  667547ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js:206
+[  672639ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js:206
+[  672823ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3016/_next/static/webpack/2e225f49534dcf58.webpack.hot-update.json:0
+[  672824ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js:347
+[  689018ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3016/_next/static/webpack/2e225f49534dcf58.webpack.hot-update.json:0
+[  689020ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js:347
+[  698522ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630

@@ -20,3 +20,42 @@
 [ 8071004ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:113
 [ 8073683ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630
 [ 8073836ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://fonts.gstatic.com/s/inter/v20/UcCB3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfU5NJeWUdIOjBeTGiXZdND2M.woff2:0
+[ 9271714ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[ 9288065ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[ 9292589ms] [LOG] [Fast Refresh] done in 4514ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[ 9306924ms] [LOG] [Fast Refresh] done in 18860ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[ 9312191ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://fonts.gstatic.com/s/inter/v20/UcCB3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfU5NJeWUdIOjBeTGiXZdND2M.woff2:0
+[ 9845834ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[ 9926735ms] [LOG] [Fast Refresh] done in 80899ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[ 9933734ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[10026563ms] [ERROR] ./app/layout.tsx
+Error:   x Unexpected token `r`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\app\layout.tsx:8:1]
+  5 | 
+  6 | export const metadata: Metadata = {
+  7 |   title: { default: "SDC | Student Developers Club", template: "%s | SDC" },
+  8 |   description: "Student Developers Club at Vardhaman College of Engineering, Hyderabad.",`r`n  icons: { icon: "/icon.svg", shortcut: "/icon.svg", apple: "/icon.svg" },
+    :                                                                                          ^^^
+  9 | };
+ 10 | 
+ 11 | export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/next-devtools/userspace/app/errors/intercept-console-error.js:56
+[10026955ms] [LOG] {file: Object} @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/next-devtools/index.js:1630
+[10028621ms] [LOG] [Fast Refresh] done in 94886ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[10049321ms] [LOG] [Fast Refresh] done in 115585ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[10057377ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[10088443ms] [LOG] [Fast Refresh] done in 31066ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[10118743ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://fonts.gstatic.com/s/inter/v20/UcCB3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfU5NJeWUdIOjBeTGiXZdND2M.woff2:0
+[10226331ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[10238398ms] [LOG] [Fast Refresh] done in 12086ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[10253043ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[10261394ms] [LOG] [Fast Refresh] done in 8349ms @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/report-hmr-latency.js:13
+[10276754ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3013/?_rsc=_mjR7ylJSLpkZcZ3:0
+[10280142ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://fonts.gstatic.com/s/inter/v20/UcCB3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfU5NJeWUdIOjBeTGiXZdND2M.woff2:0
+[10282061ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630

@@ -468,3 +468,18 @@ main { position: relative; }
   .social-redirect:active { transform: none !important; }
   .binary-ripple { display: none; }
 }
+
+/* Visibility and alignment correction: sparse, legible code rain. */
+.social-redirect {
+  align-items: center;
+}
+
+.social-redirect__icon {
+  display: grid;
+  place-items: center;
+}
+
+.social-redirect strong,
+.social-redirect small {
+  display: block;
+}

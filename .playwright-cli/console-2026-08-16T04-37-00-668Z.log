@@ -1,2 +1,79 @@
 [    4615ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630
 [    4997ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3014/favicon.ico:0
+[ 1136679ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[ 1149380ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3014/_next/static/webpack/0337c80592771992.webpack.hot-update.json:0
+[ 1162923ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630
+[ 1710759ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[ 1766422ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3014/_next/static/webpack/3a2dde3f19d619ee.webpack.hot-update.json:0
+[ 1770571ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[ 1824158ms] [ERROR] ./app/layout.tsx
+Error:   x Unexpected token `r`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\app\layout.tsx:8:1]
+  5 | 
+  6 | export const metadata: Metadata = {
+  7 |   title: { default: "SDC | Student Developers Club", template: "%s | SDC" },
+  8 |   description: "Student Developers Club at Vardhaman College of Engineering, Hyderabad.",`r`n  icons: { icon: "/icon.svg", shortcut: "/icon.svg", apple: "/icon.svg" },
+    :                                                                                          ^^^
+  9 | };
+ 10 | 
+ 11 | export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/next-devtools/userspace/app/errors/intercept-console-error.js:56
+[ 1824453ms] [LOG] {file: Object} @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/next-devtools/index.js:1630
+[ 1826850ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3014/_next/static/webpack/3a2dde3f19d619ee.webpack.hot-update.json:0
+[ 1829067ms] [ERROR] ./app/layout.tsx
+Error:   x Unexpected token `r`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\app\layout.tsx:8:1]
+  5 | 
+  6 | export const metadata: Metadata = {
+  7 |   title: { default: "SDC | Student Developers Club", template: "%s | SDC" },
+  8 |   description: "Student Developers Club at Vardhaman College of Engineering, Hyderabad.",`r`n  icons: { icon: "/icon.svg", shortcut: "/icon.svg", apple: "/icon.svg" },
+    :                                                                                          ^^^
+  9 | };
+ 10 | 
+ 11 | export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./app/layout.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/next-devtools/userspace/app/errors/intercept-console-error.js:56
+[ 1921575ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3014/_next/static/webpack/3a2dde3f19d619ee.webpack.hot-update.json:0
+[ 1998027ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[ 2055694ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[ 2056929ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3014/_next/static/webpack/3a2dde3f19d619ee.webpack.hot-update.json:0
+[ 2083197ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3014/?_rsc=_mjR7ylJSLpkZcZ3:0
+[ 2083770ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3014/:0
+[ 2088213ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(pages-dir-browser)/./node_modules/react-dom/cjs/react-dom-client.development.js:28004
+[ 2089596ms] ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x Unexpected token `r`. Expected identifier, string literal, numeric literal or [ for the computed key
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\app\layout.tsx:8:1]
+  5 | 
+  6 | export const metadata: Metadata = {
+  7 |   title: { default: "SDC | Student Developers Club", template: "%s | SDC" },
+  8 |   description: "Student Developers Club at Vardhaman College of Engineering, Hyderabad.",`r`n  icons: { icon: "/icon.svg", shortcut: "/icon.svg", apple: "/icon.svg" },
+    :                                                                                          ^^^
+  9 | };
+ 10 | 
+ 11 | export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+    `----
+
+
+Caused by:
+    Syntax Error
+    at processResult (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\webpack\bundle5.js:29:407086)
+    at <unknown> (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\webpack\bundle5.js:29:408881)
+    at <unknown> (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:8645)
+    at <unknown> (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:5019)
+    at r.callback (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:4039)
+[ 2089138ms] [LOG] [HMR] connected @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:45
+[ 2091254ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js:206
+[ 2109507ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3014/_next/static/webpack/2e225f49534dcf58.webpack.hot-update.json:0
+[ 2109508ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js:347
+[ 2128306ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630

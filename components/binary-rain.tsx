@@ -29,8 +29,8 @@ export function BinaryRain() {
     const isCompact = () => window.innerWidth < 640;
     const streamCount = () => {
       const lowPower = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
-      if (isCompact()) return 8;
-      return lowPower ? 14 : 18;
+      if (isCompact()) return 7;
+      return lowPower ? 11 : 14;
     };
 
     const resize = () => {
@@ -43,7 +43,7 @@ export function BinaryRain() {
       context.setTransform(ratio, 0, 0, ratio, 0, 0);
       height = innerHeight;
       streams = Array.from({ length: streamCount() }, (_, index) => ({
-        gold: index % 11 === 0,
+        gold: index % 9 === 0,
         length: 7 + ((index * 3) % 7),
         seed: index * 17,
         speed: 18 + ((index * 7) % 18),
@@ -55,7 +55,7 @@ export function BinaryRain() {
     const draw = (staticFrame = false) => {
       const { innerWidth, innerHeight } = window;
       context.clearRect(0, 0, innerWidth, innerHeight);
-      const fontSize = isCompact() ? 10 : 11;
+      const fontSize = isCompact() ? 11 : 12;
       const lineHeight = fontSize * 1.65;
       context.font = `500 ${fontSize}px "JetBrains Mono", monospace`;
       context.textBaseline = "top";
@@ -65,7 +65,7 @@ export function BinaryRain() {
         for (let trailIndex = 0; trailIndex < stream.length; trailIndex += 1) {
           const y = top - trailIndex * lineHeight;
           if (y < -lineHeight || y > innerHeight + lineHeight) continue;
-          const alpha = (1 - trailIndex / stream.length) * (stream.gold && trailIndex === 0 ? 0.19 : 0.105);
+          const alpha = (1 - trailIndex / stream.length) * (stream.gold && trailIndex === 0 ? 0.32 : 0.2);
           context.fillStyle = stream.gold && trailIndex === 0
             ? `rgba(235, 190, 112, ${alpha})`
             : `rgba(172, 129, 255, ${alpha})`;
@@ -95,6 +95,7 @@ export function BinaryRain() {
       }
     };
 
+    const onResize = () => { resize(); start(); };
     const onVisibilityChange = () => {
       isPaused = document.hidden;
       if (isPaused) window.cancelAnimationFrame(frameId ?? 0);
@@ -103,12 +104,13 @@ export function BinaryRain() {
 
     resize();
     start();
-    window.addEventListener("resize", () => { resize(); start(); }, { passive: true });
+    window.addEventListener("resize", onResize, { passive: true });
     document.addEventListener("visibilitychange", onVisibilityChange);
     motionQuery.addEventListener("change", start);
 
     return () => {
       window.cancelAnimationFrame(frameId ?? 0);
+      window.removeEventListener("resize", onResize);
       document.removeEventListener("visibilitychange", onVisibilityChange);
       motionQuery.removeEventListener("change", start);
     };
