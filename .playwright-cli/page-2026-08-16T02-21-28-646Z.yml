@@ -1,0 +1,35 @@
+- main [ref=e2]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - img "SDC logo" [ref=e7]
+      - paragraph [ref=e8]: Student Developers Club
+      - generic [ref=e9]: Vardhaman College of Engineering, Hyderabad
+    - generic [ref=e10]:
+      - heading "Find SDC online." [level=1] [ref=e11]
+      - paragraph [ref=e12]: Follow the club, join the conversation, or send us a note.
+    - navigation "Student Developers Club links" [ref=e13]:
+      - link "Instagram @sdc.vce" [ref=e14] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e20]:
+          - strong [ref=e21]: Instagram
+          - generic [ref=e22]: "@sdc.vce"
+        - generic [ref=e23]: ↗
+      - link "LinkedIn Student Developers Club" [ref=e24] [cursor=pointer]:
+        - /url: https://www.linkedin.com/company/student-developer-club-vce
+        - generic [ref=e28]:
+          - strong [ref=e29]: LinkedIn
+          - generic [ref=e30]: Student Developers Club
+        - generic [ref=e31]: ↗
+      - link "Discord Join the community" [ref=e32] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e36]:
+          - strong [ref=e37]: Discord
+          - generic [ref=e38]: Join the community
+        - generic [ref=e39]: ↗
+      - link "Email Write to the club" [ref=e40] [cursor=pointer]:
+        - /url: mailto:studentdevelopersclub@vardhaman.org
+        - generic [ref=e45]:
+          - strong [ref=e46]: Email
+          - generic [ref=e47]: Write to the club
+        - generic [ref=e48]: ↗
+    - generic [ref=e49]: Built by students, for students.
