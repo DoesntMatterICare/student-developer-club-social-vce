@@ -131,3 +131,221 @@ Caused by:
     at async requestHandlerImpl (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\lib\router-server.js:485:13)
     at async Server.requestListener (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\server\lib\start-server.js:226:13)
 [ 2652046ms] [LOG] [HMR] connected @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:45
+[ 3198714ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js:206
+[ 3217229ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js:347
+[ 3231015ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/react-dom/cjs/react-dom-client.development.js:25630
+[ 3233011ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[ 3241126ms] [ERROR] ./components/binary-rain.tsx
+Error:   x Expected ';', '}' or <eof>
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\components\binary-rain.tsx:32:1]
+ 29 |     const isCompact = () => window.innerWidth < 640;
+ 30 |     const streamCount = () => {
+ 31 |       const lowPower = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
+ 32 |       if (isCompact()) return 9;`r`n      return lowPower ? 14 : 18;
+    :                                 ^|^^
+    :                                  `-- This is the expression part of an expression statement
+ 33 |     };
+ 34 | 
+ 35 |     const resize = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/binary-rain.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/next-devtools/userspace/app/errors/intercept-console-error.js:56
+[ 3241215ms] [LOG] {file: Object} @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/next-devtools/index.js:1630
+[ 3241414ms] [LOG] [Fast Refresh] rebuilding @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/client/dev/hot-reloader/app/hot-reloader-app.js:196
+[ 3244036ms] [ERROR] ./components/binary-rain.tsx
+Error:   x Expected ';', '}' or <eof>
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\components\binary-rain.tsx:32:1]
+ 29 |     const isCompact = () => window.innerWidth < 640;
+ 30 |     const streamCount = () => {
+ 31 |       const lowPower = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
+ 32 |       if (isCompact()) return 9;`r`n      return lowPower ? 14 : 18;
+    :                                 ^|^^
+    :                                  `-- This is the expression part of an expression statement
+ 33 |     };
+ 34 | 
+ 35 |     const resize = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/binary-rain.tsx
+./app/layout.tsx @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/next-devtools/userspace/app/errors/intercept-console-error.js:56
+[ 3244044ms] [LOG] {file: Object} @ webpack-internal:///(app-pages-browser)/./node_modules/next/dist/compiled/next-devtools/index.js:1630
+[ 3271976ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3014/?_rsc=_mjR7ylJSLpkZcZ3:0
+[ 3273810ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3014/:0
+[ 3284333ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(pages-dir-browser)/./node_modules/react-dom/cjs/react-dom-client.development.js:28004
+[ 3285729ms] ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x Expected ';', '}' or <eof>
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\components\binary-rain.tsx:32:1]
+ 29 |     const isCompact = () => window.innerWidth < 640;
+ 30 |     const streamCount = () => {
+ 31 |       const lowPower = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
+ 32 |       if (isCompact()) return 9;`r`n      return lowPower ? 14 : 18;
+    :                                 ^|^^
+    :                                  `-- This is the expression part of an expression statement
+ 33 |     };
+ 34 | 
+ 35 |     const resize = () => {
+    `----
+
+
+Caused by:
+    Syntax Error
+    at processResult (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\webpack\bundle5.js:29:407086)
+    at <unknown> (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\webpack\bundle5.js:29:408881)
+    at <unknown> (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:8645)
+    at <unknown> (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:5019)
+    at r.callback (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:4039)
+[ 3285631ms] [LOG] [HMR] connected @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:45
+[ 3285739ms] [ERROR] ./components/binary-rain.tsx
+Error:   x Expected ';', '}' or <eof>
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\components\binary-rain.tsx:32:1]
+ 29 |     const isCompact = () => window.innerWidth < 640;
+ 30 |     const streamCount = () => {
+ 31 |       const lowPower = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
+ 32 |       if (isCompact()) return 9;`r`n      return lowPower ? 14 : 18;
+    :                                 ^|^^
+    :                                  `-- This is the expression part of an expression statement
+ 33 |     };
+ 34 | 
+ 35 |     const resize = () => {
+    `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/next-devtools/userspace/pages/pages-dev-overlay-setup.js:76
+[ 3286226ms] [LOG] {file: Object} @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/compiled/next-devtools/index.js:1630
+[ 3410137ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3014/_next/static/webpack/2e225f49534dcf58.webpack.hot-update.json:0
+[ 3410141ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js:347
+[ 3412682ms] [ERROR] ./components/binary-rain.tsx
+Error:   x Expected ';', '}' or <eof>
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\components\binary-rain.tsx:32:1]
+ 29 |     const isCompact = () => window.innerWidth < 640;
+ 30 |     const streamCount = () => {
+ 31 |       const lowPower = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
+ 32 |       if (isCompact()) return 9;`r`n      return lowPower ? 14 : 18;
+    :                                 ^|^^
+    :                                  `-- This is the expression part of an expression statement
+ 33 |     };
+ 34 | 
+ 35 |     const resize = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/binary-rain.tsx
+./app/layout.tsx @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/next-devtools/userspace/pages/pages-dev-overlay-setup.js:76
+[ 3412696ms] [LOG] {file: Object} @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/compiled/next-devtools/index.js:1630
+[ 3412789ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3014/_next/static/webpack/2e225f49534dcf58.webpack.hot-update.json:0
+[ 3412790ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js:347
+[ 3413740ms] [ERROR] ./components/binary-rain.tsx
+Error:   x Expected ';', '}' or <eof>
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\components\binary-rain.tsx:32:1]
+ 29 |     const isCompact = () => window.innerWidth < 640;
+ 30 |     const streamCount = () => {
+ 31 |       const lowPower = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
+ 32 |       if (isCompact()) return 9;`r`n      return lowPower ? 14 : 18;
+    :                                 ^|^^
+    :                                  `-- This is the expression part of an expression statement
+ 33 |     };
+ 34 | 
+ 35 |     const resize = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/binary-rain.tsx
+./app/layout.tsx @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/next-devtools/userspace/pages/pages-dev-overlay-setup.js:76
+[ 3414160ms] [ERROR] ./components/binary-rain.tsx
+Error:   x Expected ';', '}' or <eof>
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\components\binary-rain.tsx:32:1]
+ 29 |     const isCompact = () => window.innerWidth < 640;
+ 30 |     const streamCount = () => {
+ 31 |       const lowPower = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
+ 32 |       if (isCompact()) return 9;`r`n      return lowPower ? 14 : 18;
+    :                                 ^|^^
+    :                                  `-- This is the expression part of an expression statement
+ 33 |     };
+ 34 | 
+ 35 |     const resize = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/binary-rain.tsx
+./app/layout.tsx @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/next-devtools/userspace/pages/pages-dev-overlay-setup.js:76
+[ 3414383ms] [ERROR] Failed to load resource: the server responded with a status of 404 (Not Found) @ http://127.0.0.1:3014/_next/static/webpack/2e225f49534dcf58.webpack.hot-update.json:0
+[ 3414383ms] [WARNING] [Fast Refresh] performing full reload because your application had an unrecoverable error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/hot-reloader-pages.js:347
+[ 3415231ms] [ERROR] ./components/binary-rain.tsx
+Error:   x Expected ';', '}' or <eof>
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\components\binary-rain.tsx:32:1]
+ 29 |     const isCompact = () => window.innerWidth < 640;
+ 30 |     const streamCount = () => {
+ 31 |       const lowPower = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
+ 32 |       if (isCompact()) return 9;`r`n      return lowPower ? 14 : 18;
+    :                                 ^|^^
+    :                                  `-- This is the expression part of an expression statement
+ 33 |     };
+ 34 | 
+ 35 |     const resize = () => {
+    `----
+
+Caused by:
+    Syntax Error
+
+Import trace for requested module:
+./components/binary-rain.tsx
+./app/layout.tsx @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/next-devtools/userspace/pages/pages-dev-overlay-setup.js:76
+[ 3416593ms] [ERROR] Failed to load resource: the server responded with a status of 500 (Internal Server Error) @ http://127.0.0.1:3014/:0
+[ 3419430ms] [INFO] %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold @ webpack-internal:///(pages-dir-browser)/./node_modules/react-dom/cjs/react-dom-client.development.js:28004
+[ 3420120ms] ModuleBuildError: Module build failed (from ./node_modules/next/dist/build/webpack/loaders/next-swc-loader.js):
+Error:   x Expected ';', '}' or <eof>
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\components\binary-rain.tsx:32:1]
+ 29 |     const isCompact = () => window.innerWidth < 640;
+ 30 |     const streamCount = () => {
+ 31 |       const lowPower = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
+ 32 |       if (isCompact()) return 9;`r`n      return lowPower ? 14 : 18;
+    :                                 ^|^^
+    :                                  `-- This is the expression part of an expression statement
+ 33 |     };
+ 34 | 
+ 35 |     const resize = () => {
+    `----
+
+
+Caused by:
+    Syntax Error
+    at processResult (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\webpack\bundle5.js:29:407086)
+    at <unknown> (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\webpack\bundle5.js:29:408881)
+    at <unknown> (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:8645)
+    at <unknown> (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:5019)
+    at r.callback (file://C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\node_modules\next\dist\compiled\loader-runner\LoaderRunner.js:1:4039)
+[ 3420113ms] [LOG] [HMR] connected @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/client/dev/hot-reloader/pages/websocket.js:45
+[ 3420125ms] [ERROR] ./components/binary-rain.tsx
+Error:   x Expected ';', '}' or <eof>
+    ,-[C:\Users\user\OneDrive\Documents\ChatGPT\SDCWEBSITE\components\binary-rain.tsx:32:1]
+ 29 |     const isCompact = () => window.innerWidth < 640;
+ 30 |     const streamCount = () => {
+ 31 |       const lowPower = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
+ 32 |       if (isCompact()) return 9;`r`n      return lowPower ? 14 : 18;
+    :                                 ^|^^
+    :                                  `-- This is the expression part of an expression statement
+ 33 |     };
+ 34 | 
+ 35 |     const resize = () => {
+    `----
+
+Caused by:
+    Syntax Error @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/next-devtools/userspace/pages/pages-dev-overlay-setup.js:76
+[ 3420421ms] [LOG] {file: Object} @ webpack-internal:///(pages-dir-browser)/./node_modules/next/dist/compiled/next-devtools/index.js:1630

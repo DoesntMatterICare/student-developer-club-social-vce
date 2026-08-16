@@ -6,9 +6,10 @@ export const siteConfig = {
   /** Set NEXT_PUBLIC_SDC_QR_CODE to the final hosted or public QR image path. */
   qrCodeSrc: process.env.NEXT_PUBLIC_SDC_QR_CODE || "/qr-placeholder.svg",
   social: {
-    instagram: "#",
+    instagram: "https://www.instagram.com/studentdevelopersclub.vce?igsh=MWRmZ3J5Y3N4NnRscw%3D%3D",
     linkedin: "https://www.linkedin.com/company/student-developer-club-vce",
     discord: "#",
     email: "mailto:studentdevelopersclub@vardhaman.org",
   },
 } as const;
+

@@ -29,8 +29,7 @@ export function BinaryRain() {
     const isCompact = () => window.innerWidth < 640;
     const streamCount = () => {
       const lowPower = typeof navigator.hardwareConcurrency === "number" && navigator.hardwareConcurrency <= 4;
-      if (isCompact()) return 7;
-      return lowPower ? 11 : 14;
+      if (isCompact()) return 9;`r`n      return lowPower ? 14 : 18;
     };
 
     const resize = () => {
@@ -46,7 +45,7 @@ export function BinaryRain() {
         gold: index % 9 === 0,
         length: 7 + ((index * 3) % 7),
         seed: index * 17,
-        speed: 42 + ((index * 11) % 27),
+        speed: 56 + ((index * 11) % 31),
         x: ((index + 1) / (streamCount() + 1)) * innerWidth,
         y: -((index * 83) % (innerHeight + 180)),
       }));
@@ -121,5 +120,7 @@ export function BinaryRain() {
 
   return <canvas ref={canvasRef} className="binary-rain" aria-hidden="true" />;
 }
+
+
 
 
