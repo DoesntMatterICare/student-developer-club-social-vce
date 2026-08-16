@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { BinaryRain } from "@/components/binary-rain";
 import "./globals.css";
 import "./sdc-redesign.css";
 
@@ -8,5 +9,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body><div className="page-bg" aria-hidden="true" /><main>{children}</main></body></html>;
+  return <html lang="en"><body><div className="page-bg" aria-hidden="true" /><BinaryRain /><main>{children}</main></body></html>;
 }
