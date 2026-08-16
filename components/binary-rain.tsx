@@ -46,7 +46,7 @@ export function BinaryRain() {
         gold: index % 9 === 0,
         length: 7 + ((index * 3) % 7),
         seed: index * 17,
-        speed: 18 + ((index * 7) % 18),
+        speed: 42 + ((index * 11) % 27),
         x: ((index + 1) / (streamCount() + 1)) * innerWidth,
         y: -((index * 83) % (innerHeight + 180)),
       }));
@@ -65,10 +65,13 @@ export function BinaryRain() {
         for (let trailIndex = 0; trailIndex < stream.length; trailIndex += 1) {
           const y = top - trailIndex * lineHeight;
           if (y < -lineHeight || y > innerHeight + lineHeight) continue;
-          const alpha = (1 - trailIndex / stream.length) * (stream.gold && trailIndex === 0 ? 0.32 : 0.2);
-          context.fillStyle = stream.gold && trailIndex === 0
-            ? `rgba(235, 190, 112, ${alpha})`
-            : `rgba(172, 129, 255, ${alpha})`;
+          const isHead = trailIndex === 0;
+          const alpha = (1 - trailIndex / stream.length) * (stream.gold && isHead ? 0.7 : 0.28);
+          context.shadowBlur = isHead ? 15 : 0;
+          context.shadowColor = stream.gold ? "rgba(255, 194, 94, 0.9)" : "rgba(176, 77, 255, 0.95)";
+          context.fillStyle = stream.gold && isHead
+            ? `rgba(255, 208, 120, ${alpha})`
+            : `rgba(190, 125, 255, ${alpha})`;
           context.fillText(String((stream.seed + trailIndex) % 2), stream.x, y);
         }
       });
@@ -118,3 +121,5 @@ export function BinaryRain() {
 
   return <canvas ref={canvasRef} className="binary-rain" aria-hidden="true" />;
 }
+
+
