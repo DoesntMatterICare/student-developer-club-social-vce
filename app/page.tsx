@@ -5,8 +5,8 @@ import { siteConfig } from "@/lib/site";
 const links = [
   { name: "Instagram", handle: "@sdc.vce", href: siteConfig.social.instagram, icon: "instagram" },
   { name: "LinkedIn", handle: "Student Developers Club", href: siteConfig.social.linkedin, icon: "linkedin" },
-  { name: "Discord", handle: "Join the community", href: siteConfig.social.discord, icon: "discord" },
-  { name: "Email", handle: "Write to the club", href: siteConfig.social.email, icon: "email" },
+  { name: "Discord", handle: "Join the community", href: siteConfig.social.discord, icon: "discord", status: "coming-soon" },
+  { name: "Email", handle: "Write to the club", href: siteConfig.social.email, icon: "email", status: "coming-soon" },
 ] as const;
 
 export default function HomePage() {
