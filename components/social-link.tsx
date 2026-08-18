@@ -1,9 +1,9 @@
 "use client";
 import type { CSSProperties, KeyboardEvent, PointerEvent, MouseEvent } from "react";
 import { useState } from "react";
-import { DiscordIcon, InstagramIcon, LinkedInIcon, MailIcon } from "@/components/icons";
+import { DiscordIcon, InstagramIcon, LinkedInIcon, MailIcon, WhatsAppIcon } from "@/components/icons";
 
-type IconName = "discord" | "email" | "instagram" | "linkedin";
+type IconName = "discord" | "email" | "instagram" | "linkedin" | "whatsapp";
 
 type SocialLinkProps = {
   handle: string;
@@ -20,6 +20,7 @@ const icons = {
   email: MailIcon,
   instagram: InstagramIcon,
   linkedin: LinkedInIcon,
+  whatsapp: WhatsAppIcon,
 };
 
 export function SocialLink({ handle, href, icon, name, status = "live" }: SocialLinkProps) {
