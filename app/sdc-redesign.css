@@ -483,3 +483,100 @@ main { position: relative; }
 .social-redirect small {
   display: block;
 }
+
+/* Wrapper now owns list-item concerns since .social-redirect
+   is no longer a direct child of .social-list */
+.social-list {
+  counter-reset: sdc-link;
+}
+
+.social-redirect-wrap {
+  counter-increment: sdc-link;
+  border-block-end: 1px solid var(--sdc-rule);
+}
+
+.social-redirect-wrap:last-child {
+  border-block-end: 0;
+}
+
+.social-redirect-wrap .social-redirect {
+  border-block-end: 0; /* border now lives on the wrapper, not the anchor */
+}
+
+/* Entrance animation delays: retarget from .social-redirect to the wrapper */
+.social-redirect-wrap:nth-child(1) .social-redirect { animation-delay: 250ms; }
+.social-redirect-wrap:nth-child(2) .social-redirect { animation-delay: 300ms; }
+.social-redirect-wrap:nth-child(3) .social-redirect { animation-delay: 350ms; }
+.social-redirect-wrap:nth-child(4) .social-redirect { animation-delay: 400ms; }
+
+/* Disabled state — driven by aria-disabled, not a class */
+.social-redirect[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+.social-redirect[aria-disabled="true"] .social-redirect__icon {
+  color: var(--sdc-faint);
+}
+
+.social-redirect[aria-disabled="true"] strong {
+  color: var(--sdc-muted);
+}
+
+.social-redirect[aria-disabled="true"] .social-redirect__arrow {
+  color: var(--sdc-faint);
+  opacity: 0.6;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .social-redirect[aria-disabled="true"]:hover {
+    background: var(--sdc-surface);
+    box-shadow: none;
+    transform: none;
+  }
+
+  .social-redirect[aria-disabled="true"]:hover .social-redirect__icon {
+    border-color: var(--sdc-rule);
+    color: var(--sdc-faint);
+    transform: none;
+  }
+
+  .social-redirect[aria-disabled="true"]:hover strong,
+  .social-redirect[aria-disabled="true"]:hover small {
+    transform: none;
+  }
+
+  .social-redirect[aria-disabled="true"]:hover .social-redirect__arrow {
+    color: var(--sdc-faint);
+    transform: none;
+  }
+}
+
+/* Error message — now a block sibling under the anchor, not an absolute overlay */
+:root {
+  --sdc-error: oklch(68% 0.16 27);
+  --sdc-error-glow: oklch(68% 0.16 27 / 0.16);
+}
+
+.social-redirect__error {
+  margin: 0;
+  padding: var(--sdc-space-1) 0 var(--sdc-space-2);
+  color: var(--sdc-error);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  line-height: 1.4;
+  animation: sdc-error-pop 220ms var(--sdc-ease-snap) both;
+}
+
+@keyframes sdc-error-pop {
+  from { opacity: 0; transform: translateY(-0.25rem); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-redirect__error {
+    animation: sdc-reduced-fade 160ms var(--sdc-ease-out) both !important;
+    transform: none !important;
+  }
+}
