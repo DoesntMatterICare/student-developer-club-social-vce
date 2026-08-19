@@ -10,7 +10,6 @@ export const siteConfig = {
     linkedin: "https://www.linkedin.com/company/student-developer-club-vce",
     discord: "#",
     email: "#",
-    whatsapp: "https://chat.whatsapp.com/JC7wDp8Dbu4CX8Pf8nHxgd?s=sw&p=a&ilr=0",
   },
 } as const;
 
